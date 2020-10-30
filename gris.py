@@ -8,7 +8,7 @@ matriz=np.zeros((imagenA,imagenH),np.uint8)
 img2=np.int16(imagen)
 for i in range(imagenA):
     for j in range(imagenH):
-        matriz[i,j]=(img2[i,j,2])*.21 + (img2[i,j,1])*.72 + (img2[i,j,0])*.07
+        matriz[i,j]=(img2[i,j,2] + img2[i,j,1] + img2[i,j,0])/3
 
 
 cv2.imwrite("imagengris.jpg",matriz)

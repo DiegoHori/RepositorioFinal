@@ -10,4 +10,4 @@ for i in range(imagenA):
         matriz[i,j]=(imagen[i,j,0]+imagen[i,j,1]+imagen[i,j,2])/3
 
 
-cv2.imwrite("imagengris.jpg"matriz)
+cv2.imwrite("imagengris.jpg",matriz)

@@ -45,7 +45,7 @@ def padding(A):
     return B
 
 F = [[1, 1, 1],[1, 0, 1],[1, 1, 1]]
-img = cv2.imread("imagen2.jpg")
+img = cv2.imread("imagen.jpg")
 img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 img2 = escala_grises(img)
 cv2.imwrite("imagengris.jpg", img2)

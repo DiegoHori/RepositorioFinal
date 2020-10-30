@@ -10,4 +10,4 @@ def escala_grises(imagen):
             matriz[i,j]=(imagen[i,j,2] + imagen[i,j,1] + imagen[i,j,0])/3
     cv2.imwrite("imagengris.jpg",matriz)
 escala_grises("imagen.jpg")
-####
+#####

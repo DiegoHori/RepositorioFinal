@@ -1,3 +1,6 @@
+import cv2
+import numpy as np
+
 def escala_grises(A):
     B = np.zeros([A.shape[0], A.shape[1]])
     for i in range(0, len(A)):
@@ -42,7 +45,7 @@ def padding(A):
 F = [[1, 1, 1],[1, 0, 1],[1, 1, 1]]
 img = cv2.imread("imagen.jpg")
 img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-img2 = escala_griess(img)
+img2 = escala_grises(img)
 cv2.imwrite("imagengris.jpg", img2)
 
 img_padding = padding(img2)

@@ -33,6 +33,8 @@ def blanco_negro(A):
         for j in range(0, len(A[0])):
             if A[i][j] > 128:
                 B[i][j] = 255
+            if A[i][j] <= 128:
+                B[i][j] = 0
     return B
 
 def padding(A):

@@ -8,8 +8,8 @@ def escala_grises(A):
             res = 0
             for x in range(0, len(A[0][0])):
                 res += A[i][j][x]
-                res = int(res/len(A[0][0]))
-                B[i][j] = res
+            res = int(res/len(A[0][0]))
+            B[i][j] = res
     return B
 
 
@@ -45,7 +45,7 @@ def padding(A):
     return B
 
 F = [[1, 1, 1],[1, 0, 1],[1, 1, 1]]
-img = cv2.imread("imagen.jpg")
+img = cv2.imread("imagen2.jpg")
 img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 img2 = escala_grises(img)
 cv2.imwrite("imagengris.jpg", img2)
